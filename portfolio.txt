@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>This is my portfolio</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<style type="text/css">
+		html {
+  scroll-behavior: smooth;
+}
+		@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			text-decoration: none;
+		}
+		body{
+	overflow-x: hidden;
+}
+.home{
+	width: 100%;
+	height: 100vh;
+	background: #222;
+}
+
+.wrapper{
+	width: 1280px;
+	max-width: 95%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+header{
+padding: 40px 0 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+
+}
+.logo{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+    }
+ .logo i{
+ 	height: 45px;
+ 	width: 45px;
+ 	background-color: palevioletred;
+ 	border-radius: 50%;
+ 	color: #fff;
+ 	font-weight: 700;
+ 	font-size: 1.5rem;
+ 	padding: 10px;
+ 	margin-right: 5px;
+ 	cursor: pointer;
+ 	text-align: center;
+
+
+ }
+ .logo .logo-text{
+ 	font-size: 30px;
+ 	font-weight: 500;
+ 	color: whitesmoke;
+ }
+ .logo-text{
+ 	white-space: nowrap;
+ 	overflow: hidden;
+ 	width: 10ch;
+ 	margin: 2rem auto;
+ 	border-right: 4px solid ghostwhite;
+ 	animation: typing 4s steps(10, end), blink-caret 0.5s step-end infinite;
+ 	animation-iteration-count: 1;
+ }
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+ nav .togglebtn{
+ 	width: 35px;
+ 	height: 35px;
+ 	position: absolute;
+ 	top: 45px;
+ 	right: 3%;
+ 	z-index: 5;
+ 	cursor: pointer;
+ 	display: none;
+}
+nav .togglebtn span{
+	display: block;
+	background-color: lavender;
+	margin: 5px 0px;
+	width: 100%;
+	height: 3px;
+	transition: 0.3s;
+	transition-property: transform,opacity;
+}
+nav .navlinks{
+list-style-type: none;
+}
+nav .navlinks li{
+	display: inline-block;
+}
+nav .navlinks li a{
+	color: whitesmoke;
+	font-size: 23px;
+	margin-right: 2.5rem;
+	transition: .5s;
+}
+nav .navlinks li a:hover{
+	opacity: 1;
+	color: palevioletred;
+	transform: scale(1.5);
+}
+nav .navlinks li a.active{
+	color: darkgoldenrod;
+}
+.container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 6rem;
+}
+.container .hero-pic{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	overflow:hidden;
+	border:15px solid #444;
+	box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.5) ;
+
+}
+.hero-pic{
+	font-size: 20px;
+	width: 500px;
+	height: 600px;
+}
+.hero-pic img{
+	height: 100%;
+	width: 100%;
+	transition: 0.5s;
+}
+.hero-pic img:hover{
+	transform: scale(1.2);
+}
+.hero-text{
+	max-width: 700px;
+	display:flex;
+	flex-direction: column;
+	padding: 15px;
+	animation: 5s anim-hero-text ease-in;
+
+}
+@keyframes anim-hero-text {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.hero-text h5{
+	color: whitesmoke;
+	font-size: 16px;
+}
+.hero-text h5 span{
+	color: palevioletred;
+	font-size: 16px;
+}
+.hero-text h1{
+	color: palevioletred;
+	font-size: 1.5rem;
+}
+.hero-text p{
+	color: whitesmoke;
+}
+.btn-grp{
+	margin: 45px 0;
+}
+.btn-grp .btn{
+	border-color:whitesmoke ;
+	color: whitesmoke;
+	background-color: #333;
+	padding: 12px 25px;
+	margin: 5px 0;
+	margin-right:7px ;
+	border-radius: 30px;
+	border: 2px solid #e5e5e5;
+	box-shadow: 0 10px 10px -8px black;
+}
+.btn.active:hover{
+	border-color: #007ced;
+	transition: 0.5s;
+}
+.btn:hover{
+	border-color: #007ced;
+	transition: 0.5s;
+	border-radius: 200px solid blue;
+	padding-inline: 20px;
+}
+
+.hero-text .social i{
+	color: whitesmoke;
+	font-size: 25px;
+	margin-right: 10px;
+	transition: 0.5s;
+}
+.hero-text .social i:hover{
+	color: palevioletred;
+	transform: rotate(360deg);
+
+}
+.about{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+            
+            background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm309-aew-013_1_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=2724bd9481a065ee24e7e7eaaabf1c55');
+            background-size: cover;
+	
+}
+.head{
+color: whitesmoke;
+display: flex;
+align-items: center;
+	font-size: 90px;
+	font-style:bold ;
+	padding: 10px;
+	top: 0px;
+	left: 0px;
+	margin-right: 10px;
+	text-align: left;
+	padding-left: 150px;
+	animation: 2s anim-hero-text ease-in infinite;
+
+}
+
+@keyframes anim-hero-text {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+
+.h1-txt .p2{
+	
+    font-size: 29px;
+    bottom: 0px;
+}
+.h1-txt .p1{
+	
+	font-size: 29px;
+	top: 10px;
+}
+.h1-txt span{
+	color: #FF2171;
+}
+
+
+.log img{
+	background-color: black;
+	background-blend-mode: multiply;
+	border-radius: 50%;
+	right: 0px;
+	height: 100%;
+	width: 100px;
+	padding: 15px;
+	min-height: 120px;
+}
+.t1 p{
+	color: #E4A5FF;
+	padding-left: 60px;
+	font-size: 20px;
+}
+.t1 span{
+	padding: 10px;
+	color: darkgoldenrod;
+	font-size: 50px;
+	font-weight: 200px;
+}
+table{
+	padding-left: 60px;
+	color: whitesmoke;
+	font-size: 15px;
+	font-style: bolder;
+}
+table i{
+	padding: 10px;
+}
+table .r12{
+	padding: 9px;
+}
+table .r2{
+	color: #159895;
+	font-weight: 600px;
+	font-size: 15px;
+	font-style: bold;
+}
+.text{
+	display: flex;
+	justify-content: space-around;
+}
+.text img{
+	height: 350px;
+	width: 400px;
+	border-radius: 10px;
+}
+.img img{
+	animation: shake 0.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.skills{
+	width: 100%;
+	height: 100vh;
+	background: #222;
+}
+.skills h1{
+	color: #C689C6;
+	text-align: center;
+	text-shadow:3px 3px 7px #FF2171;
+font-size: 50px;
+font-weight: 700px;
+font-style: bold italic;
+}
+
+.t{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.t .p1{
+	font-size: 17px;
+	font-family: "Lucida Console","cursive";
+	
+	color: #E14D2A;
+	white-space: nowrap;
+ 	overflow: hidden;
+ 	width: 50ch;
+ 	margin: 2rem auto;
+ 	border-right: 4px 2px;
+ 	text-align: center;
+ 	animation: typing 5s steps(50, end), blink-caret 0.5s step-end infinite;
+ 	animation-iteration-count:infinite;
+ }
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.t .p2{
+	font-size: 17px;
+	font-family: "Lucida Console","cursive";
+	padding-left: 150px;
+	color: #FD841F;
+	white-space: nowrap;
+ 	overflow: hidden;
+ 	width: 100ch;
+ 	margin: 2rem auto;
+ 	border-right: 4px 2px;
+ 	text-align: center;
+ 	animation: typing 5s steps(100, end), blink-caret 0.5s step-end infinite;
+ 	animation-iteration-count: infinite;
+ }
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.t .p3{
+	font-size: 17px;
+	font-family: "Lucida Console","cursive";
+	padding-left: 150px;
+	color:#E14D2A ;
+white-space: nowrap;
+ 	overflow: hidden;
+ 	width: 90ch;
+ 	margin: 2rem auto;
+ 	border-right: 4px 2px;
+ 	text-align: center;
+ 	animation: typing 5s steps(90, end), blink-caret 0.5s step-end infinite;
+ 	animation-iteration-count: infinite;
+ }
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+.tabs{
+	display: flex;
+	justify-content: space-around;
+}
+.tabs .we{
+	color: #FFCACA;
+	font-size: 25px;
+	font-weight: 900px;
+	font-family: serif;
+
+}
+.col1 .we{
+	text-align: center;
+}
+.col2 .we{
+	text-align: center;
+}
+.col3 .we{
+	text-align: center;
+}
+.col4 .we{
+	text-align: center;
+}
+.col5 .we{
+	text-align: center;
+}
+.col6 .we{
+	text-align: center;
+}
+
+.col1:hover{
+	width: 220px;
+	height: 220px;
+	border-radius: 10px;
+      box-shadow: 2px 2px 10px 10px #7fecad;
+
+}
+
+.col2:hover{
+	width: 220px;
+	height: 220px;
+	border-radius: 10px;
+      box-shadow: 2px 2px 10px 10px #7fecad;
+
+}
+
+.col3:hover{
+	width: 220px;
+	height: 220px;
+	border-radius: 10px;
+      box-shadow: 2px 2px 10px 10px #7fecad;
+
+}
+
+.col4:hover{
+	width: 220px;
+	height: 220px;
+	border-radius: 10px;
+      box-shadow: 2px 2px 10px 10px #7fecad;
+
+}
+
+.col5:hover{
+	width: 220px;
+	height: 220px;
+	border-radius: 10px;
+      box-shadow: 2px 2px 10px 10px #7fecad;
+
+}
+
+.col6:hover{
+	width: 220px;
+	height: 220px;
+	border-radius: 10px;
+      box-shadow: 2px 2px 10px 10px #7fecad;
+
+}
+.projects{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+            
+            background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm309-aew-013_1_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=2724bd9481a065ee24e7e7eaaabf1c55');
+            background-size: cover;
+	
+}
+.projects .hl{
+	color:#FFA41B ;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 3px 3px 7px #F86F03;
+}
+
+.hl{
+ width: 100px; 
+  height: 100px;
+  border-radius: 50%;
+  margin: 35px 70px 50px;
+   animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+ }
+
+@keyframes bounce { 
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
+ .conta {
+  position: relative;
+  width: 30%;
+  height: auto;
+  border-radius:  10% / 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius:  10% / 50%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.conta:hover .overlay {
+  width: 100%;
+  left: 0;
+  border-radius:  10% / 50%;
+}
+
+.te {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+.pi{
+	display: flex;
+	justify-content: space-around;
+}
+.certifications{
+	width: 100%;
+	height: 100vh;
+	background: #222;
+
+}
+  
+  .certifications h1
+  {
+  	color: #C689C6;
+	text-align: center;
+	text-shadow:3px 3px 7px #FF2171;
+font-size: 50px;
+font-weight: 700px;
+font-style: bold italic;
+  }
+  .cer{
+  	display: flex;
+  	justify-content: space-around;
+  }
+  .cer1{
+  	transition: transform .7s;
+
+          }
+          .cer1:hover{
+            box-shadow: 0px 0px 5px 2px solid blue;
+            transform: scale(1.2);
+          }
+  
+
+  
+  .cer img{
+  	height: 350px;
+  	width: 200px;
+  	border-radius: 10px;
+  }
+  .cer .she{
+  	color: #78C1F3;
+  	align-text:center;
+  	justify-content: center;
+  	padding: 29px;
+  	font-size: 10px;
+  }
+  .resume{
+  	width: 100%;
+	height: 100vh;
+	position: relative;
+            
+            background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)),url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm309-aew-013_1_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=2724bd9481a065ee24e7e7eaaabf1c55');
+            background-size: cover;
+	
+}
+.re{
+color:#FFA41B ;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 3px 3px 7px #F86F03;
+}
+
+.re{
+ width: 100px; 
+  height: 100px;
+  border-radius: 50%;
+  margin: 35px 70px 50px;
+   animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+ }
+
+@keyframes bounce { 
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
+}
+  .res{
+  	text-align: center;
+  	align-items: center;
+  	justify-content: center;
+  }
+  .res p{
+  	color: #8B1874;
+  	text-align: center;
+  	font-size: 40px;
+  	font-style: italic;
+  	font-weight: 700px;
+  }
+  .res a{
+  	text-align: center;
+  	padding: 12px 25px;
+  	margin: 5px 0;
+  	border: 2px solid blue;
+  	align-items: center;
+  	color: #AAC8A7;
+
+  }
+  .contact{
+  	width: 100%;
+	height: 100vh;
+	background: #222;
+
+
+  }
+  .con{
+  	color: #C689C6;
+	text-align: center;
+	text-shadow:3px 3px 7px #FF2171;
+font-size: 50px;
+font-weight: 700px;
+font-style: bold italic;
+  }
+  .fo{
+  	align-items: center;
+  	justify-content: center;
+  }
+  .fo form{
+  	align-items: center;
+  	justify-content: center;
+  	text-align: center;
+  }
+  .fo label{
+  	color: mediumaquamarine;
+  	font-size: 20px;
+  }
+   input[type=text] {
+  border: 10px #009FBD;
+  border-radius: 10px;
+  padding: 12px 20px;
+}
+textarea{
+	border-radius: 10px;
+}
+input[type=submit]
+{
+border-radius: 10px;
+padding: 8px 16px;
+
+}
+.fooot{
+    position: relative;
+  left: 16px;
+  bottom: 0px;
+  width: 100%;
+  background-color: none;
+  color: white;
+  text-align: center;
+
+}
+.fooot p{
+	font-size: 20px;
+color: #9BA4B5;
+}
+
+	</style>
+
+
+
+
+
+
+
+</head>
+<body>
+	<section class="home" id="home">
+<div class="hero-header">
+	<div class="wrapper">
+		<header>
+			<div class="logo">
+				<i class="fa-solid fa-j"></i>
+				<div class="logo-text">Jahnavi G</div>
+			</div>
+			<nav>
+				<div class="togglebtn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<ul class="navlinks">
+					<li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+				</ul>
+
+			</nav>
+		</header>
+		<div class="container">
+			<div class="hero-pic">
+			<img src="https://vaoversight.org/wp-content/uploads/2020/08/image1-9.jpg" alt="profile">
+		</div>
+		<div class="hero-text">
+			<h5>Hey all! I'm a<span>Frontend Developer</span></h5>
+			<h1>Designing the Web of Tomorrow</h1>
+			<p>I'm a web passionate. Diving in the technical stream.
+		</p>
+		<div class="btn-grp">
+			<a href="" class="btn active">Download CV</a>
+			<a href="#" class="btn">Contact</a>
+					</div>
+			<div class="social">
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+				
+			</div>		
+
+	</div>
+
+</div>
+</section>
+<section class="about" id="about">
+	<br>
+	<br>
+	
+	<div class="head">
+		<div class="h1">
+		<h1 class="h">Wh</h1>
+	</div>
+	<div class="h1-txt">
+		<p class="p2">o <span>am i</span></p>
+		<p class="p1">at <span>i do</span></p>
+	</div>
+	<div class="log">
+		
+		<img src="C:\Users\JAHNAVI\Downloads\icons8-question-mark (1).gif">
+
+	</div>
+</div>
+<br>
+<br>
+<div class="text">
+	<div class="t1">
+	<p>I am  <span>JAHNAVI DEVI GANNEM</span>.<br>I'm driven by a passion for creating amazing web applications that leave a lasting impression.<br>I am even passionate about writing asthetic stories.</p>
+	<br>
+		<table>
+			<tr>
+				<td class="r11"><i class='fas fa-phone' style='font-size:24px;color:palevioletred;'></i></td>
+				<td class="r2" colspan="4">+91 XX XX XX XX XX</td>
+				<td class="r12"><i class='far fa-envelope-open' style='font-size:24px;color:palevioletred;'></i>
+					<td class="r2" colspan="4">myself@gmail.com</td>
+			</tr>
+						<tr>
+				<td class="r11"><i class='far fa-calendar-alt' style='font-size:24px;color:palevioletred;'></i></td>
+				<td class="r2" colspan="4">15-07-2004</td>
+				<td class="r12"><i class='fas fa-map-marker-alt' style='font-size:24px;color:palevioletred;'></i></i>
+					<td class="r2" colspan="4">Kakinada</td>
+			</tr>
+						<tr>
+				<td class="r11"><i class='fas fa-user-alt' style='font-size:24px;color:palevioletred;'></i></td>
+				<td class="r2" colspan="4">INDIAN</td>
+				<td class="r12"><i class='fas fa-graduation-cap' style='font-size:24px;color:palevioletred;'></i></td>
+					<td class="r2" colspan="4">Graduate</td>
+			</tr>
+						<tr>
+				<td class="r11"><i class='fas fa-language' style='font-size:24px;color:palevioletred;'></i></td>
+				<td class="r2" colspan="4">English-Telugu</td>
+				<td class="r12"><i class='fa fa-linkedin-square pink-color' style='font-size:24px;color:palevioletred;'></i></td>
+					<td class="r2" colspan="4">myself/linkedin.com</td>
+			</tr>
+		</table>
+	</div>
+		<div class="img">
+		<img src="https://yt3.ggpht.com/a/AGF-l7-VSEFTsFPaLgc3TU9zAMYDI2yAdPQ5uGuq4Q=s900-c-k-c0xffffffff-no-rj-mo">
+	</div>
+</div>
+</section>
+<section class="skills" id="skills">
+	<br>
+	<br>
+	<div class="anim">
+	  <h1>Skills</h1>
+	</div>
+	<br>
+	<br>
+	
+	<div class="t">
+		<p class="p1">I'm passionate about content writing.</p>
+		<p class="p2">Had some knowledge in programming languages like C,C++,java,python.</p>
+		<p class="p3">Striving to be proficient in Full Stack Web-Development.</p> 
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="tabs">
+		
+						<div class="col1"><img src="C:\Users\JAHNAVI\Downloads\html.png" style="font-size: 60px; color: #937DC2; height: 90px; width: 90px; padding: 5px;"><br><br>
+							<p class="we">Web Development</p>
+						</div>
+
+			<div class="col2"><img src="C:\Users\JAHNAVI\Downloads\python.png" style="font-size: 60px; color: #937DC2; height: 90px; width: 90px; padding: 5px;">
+				<br><br>
+										<p class="we">Python</p>
+			</div>
+			<div class="col3"><img src="C:\Users\JAHNAVI\Downloads\letter-c (2).png" style="font-size: 60px; color: #937DC2; height: 90px; width: 90px; padding: 5px;">
+				<br><br>
+							<p class="we">C</p>
+
+			</div>
+			<div class="col4"><img src="C:\Users\JAHNAVI\Downloads\c-.png" style="font-size: 60px; color: #937DC2; height: 90px; width: 90px; padding: 5px;">
+							<br><br><p class="we">C++</p>
+
+			</div>
+      <div class="col5"><img src="C:\Users\JAHNAVI\Downloads\java.png"style="font-size: 60px; color: #937DC2; height: 90px; width: 90px; padding: 5px;" >
+      			<br><br>	<p class="we">Java</p>
+
+      </div>
+            <div class="col6"><img src="C:\Users\JAHNAVI\Downloads\content-writing.png"style="font-size: 60px; color: #937DC2; height: 90px; width: 90px; padding: 5px;" >
+            		<br><br>		<p class="we">Content Writing</p>
+
+            </div>
+
+		
+	</div>
+	<br>
+	<br>
+
+</section>
+<section class="projects" id="projects">
+	<br>
+	<br>
+	<div class="hl">Projects</div>
+	<div class="pi">
+
+		<div class="conta">
+  <img src="C:\Users\JAHNAVI\OneDrive\Pictures\Screenshots\Screenshot 2023-07-14 201935.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="te">A basic travel landing page</div>
+  </div>
+</div>
+<div class="conta">
+  <img src="C:\Users\JAHNAVI\OneDrive\Pictures\Screenshots\Screenshot 2023-07-21 222219.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="te">A food delivery landing page</div>
+  </div>
+</div>
+<div class="conta">
+  <img src="C:\Users\JAHNAVI\OneDrive\Pictures\Screenshots\Screenshot 2023-07-21 223241.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="te">A simple calculator</div>
+  </div>
+</div>
+	</div>
+
+</section>
+<section class="certifications" id="certifications">
+	<br>
+	<br>
+	<h1>Certifications</h1>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="cer">
+		<div class="cer1">
+			<a href="C:\Users\JAHNAVI\Downloads\CertificateOfCompletion_Introduction to Career Skills in Software Development.pdf">
+			<img src="C:\Users\JAHNAVI\OneDrive\Pictures\Screenshots\Screenshot 2023-07-16 151757.png">
+		</a>
+			<br>
+			<br>
+			<br>
+			<h2 class="she">Skills related to Software Development</h2>
+		</div>
+		<div class="cer1">
+			<a href="C:\Users\JAHNAVI\Downloads\CertificateOfCompletion_Career Essentials in Software Development by Microsoft and LinkedIn.pdf">
+			<img src="C:\Users\JAHNAVI\OneDrive\Pictures\Screenshots\Screenshot 2023-07-16 151838.png">
+		</a>
+			<br>
+			<br>
+			<br>
+			<h2 class="she">Career essentials in Software Development</h2>
+		</div>
+		<div class="cer1">
+			<a href="C:\Users\JAHNAVI\Downloads\CertificateOfCompletion_Programming Foundations Fundamentals.pdf">
+			<img src="C:\Users\JAHNAVI\OneDrive\Pictures\Screenshots\Screenshot 2023-07-16 151857.png">
+		</a>
+			<br>
+			<br>
+			<br>
+			<h2 class="she">Programming Foundations</h2>
+		</div>
+		<div class="cer1">
+			<a href="C:\Users\JAHNAVI\Downloads\GannemJahnavi Devi-Cybersecurity Es-certificate (2).pdf">
+			<img src="C:\Users\JAHNAVI\OneDrive\Pictures\Screenshots\Screenshot 2023-07-16 153243.png">
+		</a>
+			<br>
+			<br>
+			<br>
+			<h2 class="she">CyberSecurity Essentials</h2>
+		</div>
+		<div class="cer1">
+			<a href="C:\Users\JAHNAVI\Downloads\GannemJahnavi Devi-COMPUTER NETWORK-certificate (1).pdf">
+			<img src="C:\Users\JAHNAVI\OneDrive\Pictures\Screenshots\Screenshot 2023-07-16 153432.png">
+		</a>
+			<br>
+			<br>
+			<br>
+			<h2 class="she">Network Essentials</h2>
+		</div>
+		<div class="cer1">
+			<a href="C:\Users\JAHNAVI\Downloads\N8Muuhk6XsXgMTeu2_Tata Consultancy Services_kcc98HrdBgsbjPTzs_1682943497232_completion_certificate.pdf">
+			<img src="C:\Users\JAHNAVI\OneDrive\Pictures\Screenshots\Screenshot 2023-07-16 180435.png">
+		</a>
+			<br>
+			<br>
+			<br>
+			<h2 class="she">TCS</h2>
+		</div>
+	</div>
+</section>
+<section class="resume" id="resume">
+	<br>
+	<br>
+	<h1 class="re">Resume</h1>
+	<div class="res">
+		<p>Check out my resume!</p>
+		<br>
+		<br>
+		<br>
+		<a href="C:\Users\JAHNAVI\OneDrive\Pictures\Screenshots\Screenshot 2023-07-20 194743.png" target="_blank">Download CV</a>
+	</div>
+</section>
+<section class="contact" id="contact">
+	<br>
+	<br>
+	<h1 class="con">Contact Me</h1>
+	<br>
+	<br>
+	<br>
+	<div class="fo">
+		<form>
+		<label for="fname">Name</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Email</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="message">Send me a message</label><br>
+  <textarea name="message" id="message" cols="30" rows="8"></textarea><br><br>
+  
+
+  <input type="submit" value="Submit">
+</form>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="fooot">
+	<p>Copyright © 2023 JAHNAVI DEVI GANNEM. All rights reserved.</p>
+	</div>
+	</div>
+
+</section>
+</body>
+</html>
