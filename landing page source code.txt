@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Landing Page</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"><script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		body{
+			background-color: #FDFDBD;
+		}
+
+		.sec1{
+		height: 100vh;
+			width: 99.98%;
+			background-image: url("https://i.pinimg.com/736x/bb/4a/44/bb4a440abf2ef89e25f5ff64b7034c6d.jpg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			
+		}
+		.header{
+			display: flex;
+			justify-content: space-around;
+		}
+		.logo{
+			text-align: center;
+			font-size: 25px;
+			font-weight: 1000px;
+			font-family: "lucida",cursive;
+			color: #1A5D1A;
+			font-size: 25px;
+		}
+		
+		 .navlinks{
+list-style-type: none;
+padding-left: 20px;
+padding-top: 0px;
+padding-bottom: 0px;
+top: 0px;
+left: 0px;
+margin-right: 10px;
+}
+.nav .navlinks li{
+	display: inline-block;
+}
+.nav .navlinks li a{
+	color: #4C4B16;
+	font-size: 23px;
+	margin-right: 2.5rem;
+	text-decoration: none;
+
+		}li a{
+
+			padding: 20px;
+		transition: 0.7s;
+}
+li a::after
+{
+content: '';
+width: 0;
+height: 3px;
+background-color: coral;
+margin: auto;
+display: block;
+transition: 0.7s;
+
+}
+                li a:hover{
+                    
+                    box-shadow: 0px 0px 5px 3px solid blue;
+                    transform: scale(1.0);
+                }
+                li a:hover::after{
+                    width: 100%;
+                     box-shadow: 0px 0px 5px 3px solid blue;
+                    transform: scale(1.0);
+                    
+                }
+		.logs{
+			position: relative;
+			
+			top: 10px;
+			left: 16px;
+			margin:6px;
+		}
+		.logs i{
+			font-size: 80px;
+			margin: 7px;
+		}
+		.text{
+			padding-left: 130px;
+			bottom: 20px;
+			text-align: left;
+		}
+		.text h1{
+			font-size: 70px;
+			font-style: italic;
+			font-weight: 700px;
+			
+		}
+		.text p{
+			font-size: 25px;
+			font-family: 'Pacifico', cursive;
+		}
+		.text button{
+			padding: 20px;
+			border: 29px;
+			border-radius: 20px;
+			font-style: bold;
+			text-decoration: none;
+			background-color: #E7B10A;
+			font-size: 20px;
+			margin: 6px ;
+		}
+		.b{
+			display: flex;
+		}
+		.para{
+transition: 0.5s;
+		
+		
+}
+.para:hover{
+	border: 10px yellow;
+
+}
+		.sec2{
+			height: 100vh;
+			width: 100%;
+			background-color: #FFF4F4;
+			position: relative;
+		}
+		.head{
+             display: flex;
+             justify-content: space-around;
+		}
+		.head .h{
+			padding-left: 20px;
+			font-size: 50px;
+			font-style: italic;
+		}
+		.head .he{
+			font-size: 20px;
+			border: 2px solid black;
+			border-radius: 10px;
+			width: 550px;
+			top: 42px;
+			left: 16px;
+			height: 20px;
+			padding:8px;
+			position: relative;
+			background-color: #F5F5F5;
+		}
+		.head .p{
+			top: 40px;
+			left: 16px;
+			position: relative;
+			padding-right: 20px;
+			color: whitesmoke;
+
+
+		}
+		.i{
+			display: flex;
+
+		}
+		.i p{
+			margin: 6px;
+		}
+		.i .p
+		{
+           font-size: 22px;
+           top: 40px;
+           left: 15px;
+           text-align: center;
+           padding: 5px;
+           width: 80px;
+		}
+		.heads{
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			
+			margin: 6px;
+		}
+		.heads img{
+			height: 99px;
+			width: 95px;
+			margin: 6px;
+			border-radius: 15px;
+		}
+		.heads h1
+		{
+          font-size: 20px;
+          font-style: italic;
+          text-align: center;
+          color: #1B6B93;
+		}
+.j{
+	top: 1px;
+	right: 20px;
+	padding-left: 100px;
+	font-family: 'Lugrasimo',cursive;
+	color: #DD58D6;
+}
+.heads2{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	
+}
+.heads2 img{
+	height: 99px;
+			width: 95px;
+			border-radius: 20px;
+			
+}		
+.heads2 h1{
+	font-size: 20px;
+          font-style: italic;
+          text-align: center;
+          color: #1B6B93;
+
+}
+.ja{
+	padding-left: 90px;
+	font-family: 'Lugrasimo',cursive;
+	color: #FFA41B;
+
+}
+.j i{
+	margin: 9px;
+	font-size: 15px;
+	color: #FFA41B;
+}
+.ja i{
+	margin: 9px;
+	font-size: 15px;
+	color: #E966A0;
+}
+.p{
+	border: 2px solid greenyellow;
+	border-radius: 5px;
+	height: 30px;
+	text-align: center;
+	background-color: green;
+}
+.sec3{
+	height: 100vh;
+	width: 100%;
+	background: url('https://th.bing.com/th/id/OIP.c46691fur9lQW6coiRuu9QHaFj?pid=ImgDet&rs=1');
+	background-size: cover;
+	position: relative;
+}
+.heads {
+    position: relative;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 5s linear;
+    animation-iteration-count: 2;
+}
+
+@-webkit-keyframes rightThenLeft {
+    0%   {left: 0%;}
+    50%  {left: 100%;}
+    100% {left: 0%;}
+}
+.heads2{
+
+	 position: relative;
+    white-space: nowrap;
+    -webkit-animation: leftThenRight 5s linear;
+    animation-iteration-count: 2;
+}
+
+@-webkit-keyframes leftThenRight {
+    0%   {right: 0%;}
+    50%  {right: 100%;}
+    100% {right: 0%;}
+}
+.sec3 h1{
+	text-align: center;
+	font-size: 40px;
+	font-style: italic;
+	color: #070A52;
+}
+        .scroll{
+        	display: flex;
+        	margin: 10px;
+        	justify-content: space-around;
+        }
+
+div.row1 {
+  background-color: none;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 8px 10px;
+  width: 700px;
+  height: 250px;
+}
+.row1::-webkit-scrollbar {
+    display: none;
+}
+
+div.row1 img{
+	padding: 4px;
+	border-radius: 20px;
+}
+div.row2 {
+  background-color: none;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 8px 10px;
+  
+  width: 700px;
+  height: 250px;
+}
+.row2::-webkit-scrollbar {
+    display: none;
+}
+
+div.row2 img{
+	padding: 4px;
+	border-radius: 20px;
+}
+        .scroll2{
+        	display: flex;
+        	margin: 10px;
+        	justify-content: space-around;
+        }
+        .re{
+        	background-color: whitesmoke;
+
+        }
+	.re p{
+		position: relative;
+		top: 8px;
+		left: 16px;
+		margin: 0px;
+		text-align: left;
+		color: #66347F;
+	}
+	.row1{
+		display: flex;
+	}
+	.row2{
+		display: flex;
+	}
+.c-txt{
+	text-align: center;
+	padding: 10px;
+}
+.re span{
+	padding: 10px;
+}
+.res{
+font-size: 27px;
+font-style: bold;
+color: #FD841F;
+}
+.sec4{
+	width: 100%;
+	height: 98vh;
+	background: #FDFDBD;
+	position: relative;
+
+
+}
+.sec4 h1{
+	font-size: 40px;
+	font-style: italic;
+	color: #1D1CE5;
+	text-align: center;
+}
+.off{
+	display: flex;
+	justify-content: space-around;
+}
+.off img{
+	width: 500px;
+	height: 250px;
+	border-radius: 20px;
+}
+.offer{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	
+	
+}
+.col1{
+	border: 5px solid greenyellow;
+     padding: 30px;
+}
+.col2{
+	border: 5px solid greenyellow;
+     padding: 30px;
+}
+.col3{
+	border: 5px solid greenyellow;
+     padding: 30px;
+}
+.col4{
+	border: 5px solid greenyellow;
+     padding: 30px;
+}
+.offer img{
+	height: 80px;
+	width: 70px;
+}
+.headu{
+	font-size: 50px;
+	font-style: italic;
+	color: #331D2C;
+	text-align: center;
+}
+.sec5{
+    width: 100%;
+    height: 100vh;
+    background-color: #F2EE9D;
+}
+
+.ta{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 30px;
+	border-collapse: separate;
+	border-spacing: 50px 0;
+}
+.ta td{
+	font-size: 20px;
+	padding: 10px 0;
+	color: #461959;
+}
+
+.ta span{
+	color: orange;
+	font-style: bold;
+	font-weight: 900px;
+	font-size: 20px;
+}
+
+.fo p{
+	text-align: center;
+	font-size: 30px;
+	font-style: bold;
+	color: #982176;
+}
+
+.li{
+	display: inline-block;
+	font-size: 40px;
+	padding: 40px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	left: 14px;
+  bottom: 8px;
+  width: 100%;
+}
+
+.li i{
+	align-items: center;
+	padding: 12px 18px;
+}
+
+	</style>
+
+
+
+
+
+
+</head>
+<body>
+	<section class="sec1">
+<div class="header">
+<div class="logo">
+	<h1>Orderin'</h1>
+</div>
+<div class="nav">
+	<ul class="navlinks">
+		<li><a href="#home">Home</a></li>
+		<li><a href="#categories">Categories</a></li>
+		<li><a href="#services">Services</a></li>
+		<li><a href="#pricing">Pricing</a></li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+	</div>
+	<div class="logs">
+<i class="fa fa-heart" style="font-size:40px;color:#17594A"></i>
+<i class="fa fa-shopping-cart" style="font-size:40px;color:#17594A"></i>
+
+
+
+	</div>
+</div>
+<br><br>
+<div class="text">
+	
+		<h1>Every Day Is Tasty!</h1>
+		<p>No time to cook for your family dinner,friends party or romantic event?<br> Quisine will save your day. <br>Check the cuisine you like, order your favorite meals <br>and get them delivered freshly-cooked right to your door. Bon appetit!</p>
+		<br>
+		<div class="b">
+		<button class="para">Track your order</button>
+		<button class="para">Add to cart</button>
+	</div>
+</div>
+</section>
+<section class="sec2">
+	<div class="head">
+		<h1 class="h">Categories</h1>
+		<div class="i">
+		<p class="he"><i class="fa fa-search"></i>
+     Enter your niche</p>
+		<p class="p">Search</p>
+	</div>
+	</div>
+	
+	<h1 class="j">Browse by Food<i class="fa fa-bars"></i>
+</h1>
+	<div class="heads">
+		<div class="pic1">
+			<h1>Desserts</h1>
+			<img src="https://th.bing.com/th/id/OIP.i6sTKhzop5G7mvyTUruxRgAAAA?pid=ImgDet&rs=1">
+
+		</div>
+		<div class="pic2">
+			<h1>Biryani</h1>
+			<img src="https://th.bing.com/th/id/OIP.pA3QV9le3tWkxzb9gqli0gHaFj?pid=ImgDet&rs=1">
+		</div>
+		<div class="pic3">
+			<h1>Beverages</h1>
+			<img src="https://www.homewetbar.com/blog/wp-content/uploads/2015/05/refreshing-summer-cocktails.jpg">
+		</div>
+		<div class="pic4">
+			<h1>Pizza's</h1>
+			<img src="https://th.bing.com/th/id/OIP.RWaaZCnAJwE8O0FxwD7y0AHaEo?pid=ImgDet&rs=1">
+		</div>
+	
+		<div class="pic5">
+			<h1>Burgers</h1>
+			<img src="https://th.bing.com/th/id/OIP.pUqX9ysdiglqUspiQYwylQHaEn?pid=ImgDet&rs=1">
+		</div>
+		<div class="pic6">
+			<h1>Milkshakes</h1>
+			<img src="https://thedeliciousplate.com/wp-content/uploads/2019/06/IMG_5576-4.jpg">
+		</div>
+		<div class="pic7">
+			<h1>Breakfast</h1>
+			<img src="https://th.bing.com/th/id/OIP.PeRNw3Drnd83l05bpJnSSAHaE8?pid=ImgDet&rs=1">
+		</div>
+		<div class="pic8">
+			<h1>Sweets</h1>
+			<img src="https://storage.googleapis.com/wp-static/bombaysweetcentre/ad3c1f16-mixed-indian-sweets-scaled.jpg">
+		</div>
+	</div>
+	<br>
+	<h1 class="ja">Browse by Cuisine<i class="fa fa-bars"></i>
+</h1>
+	<div class="heads2">
+		<div class="pic9">
+			<h1>Indian</h1>
+			<img src="https://th.bing.com/th/id/OIP.6e7Vqkbgn6shoQxuQ1zUBQHaEK?pid=ImgDet&rs=1">
+	</div>
+	<div class="pic10">
+		<h1>Italic</h1>
+		<img src="https://th.bing.com/th/id/R.a3fbf2b7777793a17ef7b84a6d40fed3?rik=07Ndrldi4e7Neg&riu=http%3a%2f%2fstatic.businessinsider.com%2fimage%2f538798d3eab8eae80cb36475%2fimage.jpg&ehk=WMpCTGoO3Ex2QQ9MRjXTUOXDWTjE6hTflv9DBbKJQ6Y%3d&risl=&pid=ImgRaw&r=0">
+</div>
+<div class="pic11">
+	<h1>Chineese</h1>
+	<img src="https://th.bing.com/th/id/R.09ea5b71a7ca33835665925633c0318e?rik=G1kXGO02oOoSqQ&riu=http%3a%2f%2fsuitelife.com%2fblog%2fwp-content%2fuploads%2f2015%2f08%2f327013.jpg&ehk=sGcB7bgxuNJ9QIpzN4ufgLAOiLwAFOV29zS3bhYZDFo%3d&risl=&pid=ImgRaw&r=0">
+</div>
+
+<div class="pic12">
+	<h1>Russian</h1>
+	<img src="https://media-cdn.tripadvisor.com/media/photo-s/05/d6/dc/f7/yomitan-monogatari.jpg">
+</div>
+<div class="pic13">
+	<h1>Thai</h1>
+	<img src="https://www.chefsmove.org/wp-content/uploads/2020/03/Untitled-1.jpg">
+</div>
+<div class="pic14">
+	<h1>Japaneese</h1>
+	<img src="https://th.bing.com/th/id/OIP.zV06qVQPW6tYs40GiNTrvQHaE7?pid=ImgDet&rs=1">
+</div>
+</div>
+</section>
+<section class="sec3">
+	<h1>Our Top Picks</h1>
+	<div class="scroll">
+		<p class="res">Desserts</p>
+		<div class="row1">
+			
+			<div class="re">
+            	<img src="https://th.bing.com/th/id/OIP.SFmZoeTYOla0uWFetnZIogHaFs?w=254&h=195&c=7&r=0&o=5&dpr=1.3&pid=1.7" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Blueberry cake<span>₹500</span></p>
+            </div>
+        </div>
+              <div class="re">
+            	<img src="https://www.lacademie.com/wp-content/uploads/2022/04/pies-and-cobblers.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Pies and Coblars<span>₹350</span></p>
+            </div>
+        </div>
+                <div class="re">
+            	<img src="https://i.pinimg.com/564x/99/d5/8e/99d58e69c0316088b5dde7c6f49ce74b.jpg" width="200" height="200">
+<div class="c-txt">
+            	<p>Apple pie<span>₹700</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.lacademie.com/wp-content/uploads/2022/04/topping-your-tarts-with-some-fruits.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Tarts<span>₹500</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://i.pinimg.com/564x/5c/cf/94/5ccf94626d23c584264bd9353cc914ab.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Egg Tarts<span>₹600</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.lacademie.com/wp-content/uploads/2022/04/cookies-come-in-various-shapes.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Cookies<span>₹200</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://i.pinimg.com/564x/ca/d1/36/cad136618a69200ac4727c069764dbed.jpg" width="200" height="200">
+<div class="c-txt">
+            	<p>Cupcake cake<span>₹50</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.lacademie.com/wp-content/uploads/2022/04/cheese-cakes.jpg" width="200" height="200">
+<div class="c-txt">
+            	<p>Cheesecake<span>₹500</span></p>
+            </div>
+        </div>
+</div>
+<p class="res">Biryani's</p>
+<div class="row2">
+	<div class="re">
+	<img src="https://images.pexels.com/photos/7837978/pexels-photo-7837978.jpeg?auto=compress&cs=tinysrgb&w=600" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Chicken Biryani<span>₹500</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg?auto=compress&cs=tinysrgb&w=600" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Chicken Dum<span>₹500</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://images.pexels.com/photos/9609843/pexels-photo-9609843.jpeg?auto=compress&cs=tinysrgb&w=600" width="200" height="200">
+<div class="c-txt">
+            	<p>Egg Biryani<span>₹300</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://images.pexels.com/photos/5410410/pexels-photo-5410410.jpeg?auto=compress&cs=tinysrgb&w=600" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Cashew Biryani<span>₹300</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://images.pexels.com/photos/7394819/pexels-photo-7394819.jpeg?auto=compress&cs=tinysrgb&w=600" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Pot Biryani<span>₹700</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://images.pexels.com/photos/7353388/pexels-photo-7353388.jpeg?auto=compress&cs=tinysrgb&w=600" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Chicken Pakoda<span>₹200</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://images.pexels.com/photos/12842265/pexels-photo-12842265.jpeg?auto=compress&cs=tinysrgb&w=600" width="200" height="200">
+<div class="c-txt">
+            	<p>Fish Masala<span>₹300</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://images.pexels.com/photos/12620934/pexels-photo-12620934.jpeg?auto=compress&cs=tinysrgb&w=600" width="200" height="200">
+<div class="c-txt">
+            	<p>Prawn Masala<span>₹500</span></p>
+            </div>
+        </div>
+</div>
+
+</div>
+<br>
+<div class="scroll2">
+	<p class="res">Beverages</p>
+		<div class="row1">
+			<div class="re">
+            	<img src="https://www.vegrecipesofindia.com/wp-content/uploads/2015/05/pina-colada-recipe-280x280.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Virgin Pin Colada<span>₹200</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.vegrecipesofindia.com/wp-content/uploads/2016/09/filter-coffee-recipe-280x280.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Filter Coffee<span>₹60</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.vegrecipesofindia.com/wp-content/uploads/2019/07/kashmiri-kahwa-280x280.jpg" width="200" height="200">
+<div class="c-txt">
+            	<p>Kashmiri Kahwa<span>₹50</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.vegrecipesofindia.com/wp-content/uploads/2016/08/turmeric-milk-280x280.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Haldi Doodh<span>₹50</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.vegrecipesofindia.com/wp-content/uploads/2020/05/whipped-coffee-280x280.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Dalgona coffee<span>₹70</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.vegrecipesofindia.com/wp-content/uploads/2018/04/fruit-punch-recipe-280x280.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Friut Punch<span>₹90</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.vegrecipesofindia.com/wp-content/uploads/2015/04/basil-lemon-mojito-280x280.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Virgin Morgito<span>₹300</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.vegrecipesofindia.com/wp-content/uploads/2021/05/chaas-recipe-2-280x280.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Lassi<span>₹50</span></p>
+            </div>
+        </div>
+</div>
+<p class="res">Sweets</p>
+<div class="row2">
+	<div class="re">
+	<img src="https://cdn.pixabay.com/photo/2017/07/28/14/29/macarons-2548827_640.jpg" width="200" height="200">
+            	            	<div class="c-txt">
+            	<p>Macarons<span>₹200</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://cdn.pixabay.com/photo/2016/06/07/17/15/yogurt-1442034_640.jpg" width="200" height="200">
+            	            	<div class="c-txt">
+            	<p>Yogurt Strawberries<span>₹500</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.crazymasalafood.com/wp-content/images/peds.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Peda<span>₹200</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.crazymasalafood.com/wp-content/images/carrot-halwa-1.jpg" width="200" height="200">
+            	            	<div class="c-txt">
+            	<p>Gajjar ka Halwa<span>₹500</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.crazymasalafood.com/wp-content/images/kaju-katli.jpg" width="200" height="200">
+            	            	<div class="c-txt">
+            	<p>Kaju Burfi<span>₹900</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.crazymasalafood.com/wp-content/images/gulab_Jamun.jpg" width="200" height="200">
+            	            	<div class="c-txt">
+            	<p>Gulab Jamun<span>₹200</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.crazymasalafood.com/wp-content/images/laddoo.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Laddoo<span>₹300</span></p>
+            </div>
+        </div>
+        <div class="re">
+            	<img src="https://www.crazymasalafood.com/wp-content/images/kulfi-2.jpg" width="200" height="200">
+            	<div class="c-txt">
+            	<p>Kulfi<span>₹50</span></p>
+            </div>
+        </div>
+</div>
+
+</div>
+
+
+	
+</section>
+<section class="sec4">
+	<h1>Our Services</h1>
+<div class="off">
+	<img src="https://cdn.grabon.in/gograbon/images/web-images/uploads/1618575517942/food-coupons.jpg">
+	<img src="https://palrancho.co/wp-content/uploads/2020/08/sl3-768x402.jpg">
+</div>
+<br><br><br>
+<div class="offer">
+	<div class="col1">
+		<img src="https://th.bing.com/th/id/R.f4c7dc9d989e08e8da931f9bfbe3175e?rik=hMgp%2fjFoW2WpoQ&riu=http%3a%2f%2fwww.roadrunnercourier.com%2fwp-content%2fuploads%2f2015%2f07%2ffast-delivery-dallas-300px-300x247.png&ehk=jEmZUt9pIrzoqncIrrpzArWX6e9bGTettQ2CnxJltM8%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1">
+		<p>Fast Delivery</p>
+	</div>
+	<div class="col2">
+		<img src="https://i0.wp.com/www.titanui.com/wp-content/uploads/2016/06/18/Flat-Red-50-Coupon-Vector.png?resize=546%2C400">
+		<p>Coupons Available</p>
+	</div>
+	<div class="col3">
+		<img src="https://th.bing.com/th/id/OIP.n8dC3Xxjpo9sDfnlmbidPgHaEE?pid=ImgDet&rs=1">
+		<p>No extra charges</p>
+	</div>
+	<div class="col4">
+		<img src="https://th.bing.com/th/id/OIP.GT0ZfOxt0P_AsQAxfVyj6wHaD5?w=318&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+		<p>Discounts</p>
+	</div>
+	</div>
+	
+</section>
+<section class="sec5">
+	<br>
+	<h1 class="headu">Contact Us</h1>
+	<br><br>
+	<table class="ta">
+		<tr class="tr1">
+			<th>Menu</th>
+			<th>About</th>
+			<th>Contact</th>
+			<th>Subscribe</th>
+		</tr>
+		<tr class="tr2">
+			<td><span>></span>Oriental Foods</td>
+			<td><span>></span>Services</td>
+			<td><span>></span>Contact Us</td>
+			<td><span>></span>Facebook</td>
+		</tr>
+		<tr class="tr3">
+			<td><span>></span>Noodles</td>
+			<td><span>></span>The Team</td>
+			<td><span>></span>Gift Card</td>
+			<td><span>></span>Youtube</td>
+		</tr>
+		<tr class="tr4">
+			<td><span>></span>Sea dishes</td>
+			<td><span>></span>Careers</td>
+			<td><span>></span>Get Location</td>
+			<td><span>></span>Instagram</td>
+		</tr>
+	</table><br><br><br><br><br><br>
+	<div class="fo">
+		<p>Follow us on</p>
+
+	</div>
+	<div class="li">
+		<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+				<a href="#"><i class="fa-brands fa-facebook"></i></a>
+				
+			
+	</div>
+
+</section>
+</body>
+</html>
