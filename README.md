@@ -1,2 +1,3 @@
-# Codsoft_Project_1
+# Codsoft_Project
 This source code is all about a food delivery landing page.
+
